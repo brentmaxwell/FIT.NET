@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D25A9A36-AF77-44BE-A6EE-6AC4078B4517}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>theBrent.FitLibrary</RootNamespace>
+    <AssemblyName>theBrent.FitLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseType.cs" />
+    <Compile Include="DataMessage.cs" />
+    <Compile Include="DefinitionMessage.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Icon.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Calories.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_CrankLength.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Altitude.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Point.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Distance.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_FatCalories.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Height.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Percentage.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Timer.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Weight.cs" />
+    <Compile Include="FieldTypes\CustomFieldTypes\FitField_Wheelsize.cs" />
+    <Compile Include="FieldTypes\FitField_Activity.cs" />
+    <Compile Include="FieldTypes\FitField_ActivityLevel.cs" />
+    <Compile Include="FieldTypes\FitField_ActivityClass.cs" />
+    <Compile Include="FieldTypes\FitField_ActivitySubType.cs" />
+    <Compile Include="FieldTypes\FitField_ActivityType.cs" />
+    <Compile Include="FieldTypes\FitField_AntNetwork.cs" />
+    <Compile Include="FieldTypes\FitField_AutolapTrigger.cs" />
+    <Compile Include="FieldTypes\FitField_BatteryStatus.cs" />
+    <Compile Include="FieldTypes\FitField_BpStatus.cs" />
+    <Compile Include="FieldTypes\FitField_Checksum.cs" />
+    <Compile Include="FieldTypes\FitField_CourseCapabilities.cs" />
+    <Compile Include="FieldTypes\FitField_CoursePoint.cs" />
+    <Compile Include="FieldTypes\FitField_DateTime.cs" />
+    <Compile Include="FieldTypes\FitField_DeviceIndex.cs" />
+    <Compile Include="FieldTypes\FitField_DeviceType.cs" />
+    <Compile Include="FieldTypes\FitField_DisplayHeart.cs" />
+    <Compile Include="FieldTypes\FitField_DisplayMeasure.cs" />
+    <Compile Include="FieldTypes\FitField_DisplayPosition.cs" />
+    <Compile Include="FieldTypes\FitField_DisplayPower.cs" />
+    <Compile Include="FieldTypes\FitField_Event.cs" />
+    <Compile Include="FieldTypes\FitField_EventType.cs" />
+    <Compile Include="FieldTypes\FitField_FileFlags.cs" />
+    <Compile Include="FieldTypes\FitField_FileType.cs" />
+    <Compile Include="FieldTypes\FitField_FitnessEquipmentState.cs" />
+    <Compile Include="FieldTypes\FitField_AntPlusDeviceType.cs" />
+    <Compile Include="FieldTypes\FitField_GarminProduct.cs" />
+    <Compile Include="FieldTypes\FitField_Timezone.cs" />
+    <Compile Include="FieldTypes\FitField_SourceType.cs" />
+    <Compile Include="FieldTypes\FitField_Gender.cs" />
+    <Compile Include="FieldTypes\FitField_Goal.cs" />
+    <Compile Include="FieldTypes\FitField_GoalRecurrence.cs" />
+    <Compile Include="FieldTypes\FitField_HrType.cs" />
+    <Compile Include="FieldTypes\FitField_HrZoneCalc.cs" />
+    <Compile Include="FieldTypes\FitField_Intensity.cs" />
+    <Compile Include="FieldTypes\FitField_Language.cs" />
+    <Compile Include="FieldTypes\FitField_LapTrigger.cs" />
+    <Compile Include="FieldTypes\FitField_LeftRightBalance.cs" />
+    <Compile Include="FieldTypes\FitField_LeftRightBalance100.cs" />
+    <Compile Include="FieldTypes\FitField_LengthType.cs" />
+    <Compile Include="FieldTypes\FitField_LocalDateTime.cs" />
+    <Compile Include="FieldTypes\FitField_Manufacturer.cs" />
+    <Compile Include="FieldTypes\FitField_MesgCount.cs" />
+    <Compile Include="FieldTypes\FitField_MesgNum.cs" />
+    <Compile Include="FieldTypes\FitField_MessageIndex.cs" />
+    <Compile Include="FieldTypes\FitField_PwrZoneCalc.cs" />
+    <Compile Include="FieldTypes\FitField_Schedule.cs" />
+    <Compile Include="FieldTypes\FitField_SessionTrigger.cs" />
+    <Compile Include="FieldTypes\FitField_Sport.cs" />
+    <Compile Include="FieldTypes\FitField_SportBits0.cs" />
+    <Compile Include="FieldTypes\FitField_SportBits2.cs" />
+    <Compile Include="FieldTypes\FitField_SportBits1.cs" />
+    <Compile Include="FieldTypes\FitField_BodyLocation.cs" />
+    <Compile Include="FieldTypes\FitField_SubSport.cs" />
+    <Compile Include="FieldTypes\FitField_StrokeType.cs" />
+    <Compile Include="FieldTypes\FitField_SwimStroke.cs" />
+    <Compile Include="FieldTypes\FitField_TimerTrigger.cs" />
+    <Compile Include="FieldTypes\FitField_UserLocalId.cs" />
+    <Compile Include="FieldTypes\FitField_Weight.cs" />
+    <Compile Include="FieldTypes\FitField_ConnectivityCapabilities.cs" />
+    <Compile Include="FieldTypes\FitField_WorkoutCapabilities.cs" />
+    <Compile Include="FieldTypes\FitField_WorkoutHr.cs" />
+    <Compile Include="FieldTypes\FitField_WorkoutPower.cs" />
+    <Compile Include="FieldTypes\FitField_WorkoutStepDuration.cs" />
+    <Compile Include="FieldTypes\FitField_WorkoutStepTarget.cs" />
+    <Compile Include="FitField.cs" />
+    <Compile Include="FitFile.cs" />
+    <Compile Include="FitMessage.cs" />
+    <Compile Include="FitMessageMap.cs" />
+    <Compile Include="Messages\ActivityMessage.cs" />
+    <Compile Include="Messages\CapabilitiesMessage.cs" />
+    <Compile Include="Messages\SdmProfileMessage.cs" />
+    <Compile Include="Messages\HrmProfileMessage.cs" />
+    <Compile Include="Messages\TrainingFileMessage.cs" />
+    <Compile Include="Messages\DeviceInfoMessage.cs" />
+    <Compile Include="Messages\DeviceSettingsMessage.cs" />
+    <Compile Include="Messages\EventMessage.cs" />
+    <Compile Include="Messages\FieldCapabilitiesMessage.cs" />
+    <Compile Include="Messages\FileCapabilitiesMessage.cs" />
+    <Compile Include="Messages\FileCreatorMessage.cs" />
+    <Compile Include="Messages\FileIdMessage.cs" />
+    <Compile Include="Messages\HrvMessage.cs" />
+    <Compile Include="Messages\LapMessage.cs" />
+    <Compile Include="Messages\LengthMessage.cs" />
+    <Compile Include="Messages\MesgCapabilitiesMessage.cs" />
+    <Compile Include="Messages\RecordMessage.cs" />
+    <Compile Include="Messages\SessionMessage.cs" />
+    <Compile Include="Messages\SoftwareMessage.cs" />
+    <Compile Include="Messages\UserProfileMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Graphics\CoursePoint\01-Summit.svg" />
+    <Content Include="Graphics\CoursePoint\02-Valley.svg" />
+    <Content Include="Graphics\CoursePoint\03-Water.svg" />
+    <Content Include="Graphics\CoursePoint\04-Food.svg" />
+    <Content Include="Graphics\CoursePoint\05-Danger.svg" />
+    <Content Include="Graphics\CoursePoint\06-Left.svg" />
+    <Content Include="Graphics\CoursePoint\07-Right.svg" />
+    <Content Include="Graphics\CoursePoint\08-Straight.svg" />
+    <Content Include="Graphics\CoursePoint\09-FirstAid.svg" />
+    <Content Include="Graphics\CoursePoint\10-Cat4.svg" />
+    <Content Include="Graphics\CoursePoint\11-Cat3.svg" />
+    <Content Include="Graphics\CoursePoint\12-Cat2.svg" />
+    <Content Include="Graphics\CoursePoint\13-Cat1.svg" />
+    <Content Include="Graphics\CoursePoint\14-CatH.svg" />
+    <Content Include="Graphics\CoursePoint\16-LeftFork.svg" />
+    <Content Include="Graphics\CoursePoint\17-RightFork.svg" />
+    <Content Include="Graphics\CoursePoint\18-MiddleFork.svg" />
+    <Content Include="Graphics\CoursePoint\19-SlightLeft.svg" />
+    <Content Include="Graphics\CoursePoint\20-SharpLeft.svg" />
+    <Content Include="Graphics\CoursePoint\21-SlightRight.svg" />
+    <Content Include="Graphics\CoursePoint\22-SharpRight.svg" />
+    <Content Include="Graphics\CoursePoint\23-UTurn.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

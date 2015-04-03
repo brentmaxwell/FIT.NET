@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theBrent.FitLibrary", "theBrent.FitLibrary\theBrent.FitLibrary.csproj", "{D25A9A36-AF77-44BE-A6EE-6AC4078B4517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "theBrent.FitExplorer", "theBrent.FitExplorer\theBrent.FitExplorer.csproj", "{6C83CED0-CCBE-4446-8F01-5EBEF2CD7A61}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://thebrent.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = theBrent.FitLibrary\\theBrent.FitLibrary.csproj
+		SccProjectName1 = theBrent.FitLibrary
+		SccLocalPath1 = theBrent.FitLibrary
+		SccProjectUniqueName2 = theBrent.FitExplorer\\theBrent.FitExplorer.csproj
+		SccProjectName2 = theBrent.FitExplorer
+		SccLocalPath2 = theBrent.FitExplorer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D25A9A36-AF77-44BE-A6EE-6AC4078B4517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D25A9A36-AF77-44BE-A6EE-6AC4078B4517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D25A9A36-AF77-44BE-A6EE-6AC4078B4517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D25A9A36-AF77-44BE-A6EE-6AC4078B4517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C83CED0-CCBE-4446-8F01-5EBEF2CD7A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C83CED0-CCBE-4446-8F01-5EBEF2CD7A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C83CED0-CCBE-4446-8F01-5EBEF2CD7A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C83CED0-CCBE-4446-8F01-5EBEF2CD7A61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
